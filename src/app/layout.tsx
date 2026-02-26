@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { LeadConnectorChatWidget } from "../components/LeadConnectorChatWidget";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,12 +17,10 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
         {children}
-        <Script
-          id="leadconnector-chat-widget"
+        <LeadConnectorChatWidget
           src="https://beta.leadconnectorhq.com/loader.js"
-          data-resources-url="https://beta.leadconnectorhq.com/chat-widget/loader.js"
-          data-widget-id="69a04d87c13c9044b12a5259"
-          strategy="afterInteractive"
+          resourcesUrl="https://beta.leadconnectorhq.com/chat-widget/loader.js"
+          widgetId="69a04d87c13c9044b12a5259"
         />
       </body>
     </html>

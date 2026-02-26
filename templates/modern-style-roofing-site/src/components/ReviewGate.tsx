@@ -190,6 +190,14 @@ export function ReviewGate({ titleAs = "h2" }: ReviewGateProps) {
                   </div>
 
                   <div className="space-y-1.5">
+                    <label className="text-sm font-semibold text-slate-700">Address (optional)</label>
+                    <input
+                      className="w-full px-4 py-2.5 rounded-lg border border-slate-200 focus:border-[color:var(--c1)] focus:ring-2 focus:ring-[rgb(var(--c1-rgb)/0.25)] outline-none transition-all"
+                      placeholder="House number + street"
+                    />
+                  </div>
+
+                  <div className="space-y-1.5">
                     <label className="text-sm font-semibold text-slate-700">What went wrong?</label>
                     <textarea
                       required
