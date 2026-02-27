@@ -17,7 +17,7 @@ export const lead: LeadPreviewState = {
   "primaryColor": "#112D4E",
   "secondaryColor": "#3F72AF",
   "accentColor": "#DBE2EF",
-  "logoUrl": "/Generated%20Image%20February%2026,%202026%20-%2011_31AM.jpg.jpeg",
+  "logoUrl": "/Generated%20Image%20February%2027,%202026%20-%2012_16PM.jpg.jpeg",
   "teamPhotoUrl": "/Generated%20Image%20February%2026,%202026%20-%2011_54AM.jpg.jpeg",
   "aboutText": "Fast response plumbing & heating. Serving London and surrounding areas.",
   "accreditations": [],
