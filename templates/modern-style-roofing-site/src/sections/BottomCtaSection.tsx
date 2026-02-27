@@ -3,7 +3,7 @@
 import React from "react";
 import { Mail, Phone, ShieldCheck } from "lucide-react";
 
-import { QuoteFormCard } from "../components/QuoteFormCard";
+import { GhlInlineForm } from "../components/GhlInlineForm";
 import { useLead } from "../components/LeadProvider";
 import { resolveImageRef } from "../lib/branding";
 
@@ -74,7 +74,13 @@ export function BottomCtaSection() {
 
           <div className="lg:col-span-7">
             <div className="rounded-3xl border border-white/15 bg-white/90 backdrop-blur shadow-2xl overflow-hidden p-3 sm:p-4">
-              <QuoteFormCard />
+              <GhlInlineForm
+                iframeSrc="https://api.leadconnectorhq.com/widget/form/pUKKlY5X944tv2QrhEgj"
+                iframeId="inline-pUKKlY5X944tv2QrhEgj-cta"
+                formId="pUKKlY5X944tv2QrhEgj"
+                formName="Form 6"
+                height={879}
+              />
             </div>
           </div>
         </div>

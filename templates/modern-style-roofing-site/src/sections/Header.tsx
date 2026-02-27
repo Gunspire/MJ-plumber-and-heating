@@ -13,6 +13,7 @@ import { cn } from "../lib/cn";
 export function Header() {
   const pathname = usePathname();
   const onHome = pathname === "/";
+  const onContact = pathname === "/contact";
   const lead = useLead();
   const { site } = lead;
 
@@ -181,7 +182,7 @@ export function Header() {
                 {site.phone}
               </a>
             </div>
-            <Button as="a" href={onHome ? "#contact" : "/#contact"}>
+            <Button as="a" href={onContact ? "#contact-form" : "/contact#contact-form"}>
               {site.ctaText}
             </Button>
           </div>
@@ -279,7 +280,7 @@ export function Header() {
                 </a>
                 <Button
                   as="a"
-                  href={onHome ? "#contact" : "/#contact"}
+                  href={onContact ? "#contact-form" : "/contact#contact-form"}
                   className="w-full"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >

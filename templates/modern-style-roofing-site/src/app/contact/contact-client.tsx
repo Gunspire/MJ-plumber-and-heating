@@ -4,7 +4,7 @@ import React from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 import { PageHero } from "../../components/PageHero";
-import { QuoteFormCard } from "../../components/QuoteFormCard";
+import { GhlInlineForm } from "../../components/GhlInlineForm";
 import { SectionHeading } from "../../components/SectionHeading";
 import { useLead } from "../../components/LeadProvider";
 import { Footer } from "../../sections/Footer";
@@ -67,7 +67,15 @@ export function ContactPageClient() {
             </div>
 
             <div className="lg:col-span-7">
-              <QuoteFormCard id="contact-form" />
+              <div id="contact-form" className="bg-white rounded-2xl shadow-2xl p-3 sm:p-4">
+                <GhlInlineForm
+                  iframeSrc="https://api.leadconnectorhq.com/widget/form/pUKKlY5X944tv2QrhEgj"
+                  iframeId="inline-pUKKlY5X944tv2QrhEgj-contact"
+                  formId="pUKKlY5X944tv2QrhEgj"
+                  formName="Form 6"
+                  height={879}
+                />
+              </div>
             </div>
           </div>
         </div>

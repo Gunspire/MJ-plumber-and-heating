@@ -4,7 +4,7 @@ import React from "react";
 import { BadgeCheck, Star } from "lucide-react";
 
 import { Button } from "../components/Button";
-import { QuoteFormCard } from "../components/QuoteFormCard";
+import { GhlInlineForm } from "../components/GhlInlineForm";
 import { cn } from "../lib/cn";
 import { resolveImageRef } from "../lib/branding";
 import { useLead } from "../components/LeadProvider";
@@ -97,8 +97,19 @@ export function HeroSection() {
             </div>
           </div>
 
-          <div className="lg:col-span-4 transform hover:scale-[1.01] transition-transform duration-300">
-            <QuoteFormCard id="contact" />
+          <div
+            id="contact"
+            className="lg:col-span-4 transform hover:scale-[1.01] transition-transform duration-300"
+          >
+            <div className="bg-white rounded-2xl shadow-2xl p-3 sm:p-4">
+              <GhlInlineForm
+                iframeSrc="https://api.leadconnectorhq.com/widget/form/pUKKlY5X944tv2QrhEgj"
+                iframeId="inline-pUKKlY5X944tv2QrhEgj-hero"
+                formId="pUKKlY5X944tv2QrhEgj"
+                formName="Form 6"
+                height={879}
+              />
+            </div>
           </div>
         </div>
       </div>
